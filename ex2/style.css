@@ -1,0 +1,29 @@
+body {
+  background-color: lavender;
+}
+
+h1 {
+  text-align:center;
+  color: darkblue;
+  font-family: "times", sans-serif;
+  font-weight: bold;
+}
+
+table {
+  background-color: moccasin;
+  border-color: black;
+}
+
+#tr1 {
+  color: red;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: palatino;
+}
+
+.hidden{
+    display:none;
+}

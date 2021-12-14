@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>课程表</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="ShowDetail.js" defer></script> 
+<!-- A script that will be downloaded in parallel to parsing the page, and executed after the page has finished parsing: -->
+</head>
+
+<body>
+  <h1>刘耀威@CCNU</h1>
+  <table  border="1" cellpadding="5" cellspacing="5" align="center">
+    <tr id="tr1" align="center">
+      <th>日期/时间</th>
+      <th>8:00-9:40</th>
+      <th>10:10-11:50</th>
+      <th>12:00-14:00</th>
+      <th>14:00-15:40</th>
+      <th>16:10-17:50</th>
+      <th>18:30-20:10</th>
+      <th>20:15-21:55</th>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期一</b></td>
+      <td><b>-</b></td>
+      <td bgcolor="violet", class="show">微机原理</td>
+      <td rowspan="6" bgcolor="white">BREAK</td>
+      <td><b>-</b></td>
+      <td bgcolor="yellow", class="show">专业英语</td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期二</b></td>
+      <td bgcolor="coral", class="show">编译原理/WEB设计</td>
+      <td><b>-</b></td>
+      <td bgcolor="royalblue", class="show">数据挖掘</td>
+      <td bgcolor="yellow", class="show">发展心理学</td>
+      <td bgcolor="pink", class="show">数据库课程设计</td>
+      <td><b>-</b></td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期三</b></td>
+      <td><b>-</b></td>
+      <td bgcolor="violet", class="show">操作系统</td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+      <td bgcolor="pink", class="show">微机原理</td>
+      <td><b>-</b></td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期四</b></td>
+      <td><b>-</b></td>
+      <td bgcolor="violet", class="show">新概论</td>
+      <td bgcolor="royalblue", class="show">WEB设计</td>
+      <td bgcolor="yellow", class="show">编译原理</td>
+      <td bgcolor="pink", class="show">民族传统养生</td>
+      <td><b>-</b></td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期五</b></td>
+      <td bgcolor="coral", class="show">操作系统</td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期六</b></td>
+      <td colspan="7" bgcolor="lightgray">WEEKEND!!!</td>
+    </tr>
+    <tr align="center">
+      <td style="color:darkblue"><b>星期天</b></td>
+      <td colspan="7" bgcolor="lightgray">WEEKEND!!!</td>
+    </tr>
+  </table>
+
+  <div align="center", class="detail hidden class-1">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周一3-4节</dd>
+      <dt>教师</dt>
+      <dd>金汉均</dd>
+      <dt>教室</dt>
+      <dd>N113</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-2">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周一7-8节</dd>
+      <dt>教师</dt>
+      <dd>朱瑄</dd>
+      <dt>教室</dt>
+      <dd>N211</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-3">
+    <h2>Description</h2>
+    <dl>
+      <dt>课程</dt>
+      <dd>WEB设计</dd>
+      <dt>时间</dt>
+      <dd>周二1-2节双周</dd>
+      <dt>教师</dt>
+      <dd>涂新辉</dd>
+      <dt>教室</dt>
+      <dd>N108</dd>
+    </dl>
+    <dl>
+      <dt>课程</dt>
+      <dd>编译原理</dd>
+      <dt>时间</dt>
+      <dd>周二1-2节单周</dd>
+      <dt>教师</dt>
+      <dd>蔡霞</dd>
+      <dt>教室</dt>
+      <dd>N113</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-4">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周二5-6节</dd>
+      <dt>教师</dt>
+      <dd>刘向</dd>
+      <dt>教室</dt>
+      <dd>N312</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-5">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周二7-8节</dd>
+      <dt>教师</dt>
+      <dd>范翠英</dd>
+      <dt>教室</dt>
+      <dd>N102</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-6">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周二9-10节</dd>
+      <dt>教师</dt>
+      <dd>杨海彤</dd>
+      <dt>教室</dt>
+      <dd>N520</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-7">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周三3-4节</dd>
+      <dt>教师</dt>
+      <dd>叶俊民</dd>
+      <dt>教室</dt>
+      <dd>N108</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-8">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周三7-8节</dd>
+      <dt>教师</dt>
+      <dd>金汉均</dd>
+      <dt>教室</dt>
+      <dd>N113</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-9">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周四3-4节</dd>
+      <dt>教师</dt>
+      <dd>吕惠东</dd>
+      <dt>教室</dt>
+      <dd>N223</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-10">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周四5-6节</dd>
+      <dt>教师</dt>
+      <dd>涂新辉</dd>
+      <dt>教室</dt>
+      <dd>N108</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-11">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周四7-8节</dd>
+      <dt>教师</dt>
+      <dd>蔡霞</dd>
+      <dt>教室</dt>
+      <dd>N211</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-12">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周四9-10节前8周</dd>
+      <dt>教师</dt>
+      <dd>谭晶</dd>
+      <dt>教室</dt>
+      <dd>N314</dd>
+    </dl>
+  </div>
+  <div align="center", class="detail hidden class-13">
+    <h2>Description</h2>
+    <dl>
+      <dt>时间</dt>
+      <dd>周五1-2节</dd>
+      <dt>教师</dt>
+      <dd>叶俊民</dd>
+      <dt>教室</dt>
+      <dd>N108</dd>
+    </dl>
+  </div>
+</body>
+</html>
