@@ -24,11 +24,11 @@
             font: sans-serif;
             margin-top: 20px;
         }
+        a {
+            text-decoration: none;
+        }
         a#codeforces_id {
             color: green;
-        }
-        a#leetcode_id {
-            color: black;
         }
 
         .profile-right {
@@ -37,6 +37,11 @@
             display: grid;
             grid-template-rows: 10% 30% auto;
             grid-row-gap: 2em;
+        }
+        h1 {
+            text-align: center;
+            vertical-align: center;
+            font-size: 2em;
         }
         .grid-buttons {
             display: grid;
@@ -50,8 +55,8 @@
             color: purple;
             border-width: 0px;
             border-radius: 15px;
-            height: 60px;
-            width: 150px;
+            height: 50%;
+            width: 80%;
             font-size: 26px;
             cursor: pointer;
         }
@@ -67,9 +72,9 @@
                 <tr><th class="no-break">Name</th><td>YaoweiLiu</td></tr>
                 <tr><th class="no-break">Country/Region</th><td>China</td></tr>
                 <tr><th class="no-break">Birth Year</th><td>2002</td></tr>
-                <tr><th class="no-break">Codeforces ID</th><td><a href='https://codeforces.com/profile/no_words_to_sky' target="_blank" id="codeforces_id">no_words_to_sky</a></td></tr>
-                <tr><th class="no-break">LeetCode ID</th><td><a href='https://leetcode-cn.com/u/lyw_/' target="_blank" id="leetcode_id">lyw_</a></td></tr>
-                <tr><th class="no-break">Github ID</th><td><a href='https://github.com/YaoveiD' target="_blank" id="github_id">YaoveiD</a></td></tr>
+                <tr><th class="no-break">Codeforces ID</th><td><a href='https://codeforces.com/profile/no_words_to_sky' target="_blank" id="codeforces_id"><strong>no_words_to_sky</a></td></tr>
+                <tr><th class="no-break">LeetCode ID</th><td><a href='https://leetcode-cn.com/u/lyw_/' target="_blank" id="leetcode_id"><strong>lyw_</a></td></tr>
+                <tr><th class="no-break">Github ID</th><td><a href='https://github.com/YaoveiD' target="_blank" id="github_id"><strong>YaoveiD</a></td></tr>
                 </table>
             </div>
         </div>
@@ -82,23 +87,21 @@
                 <div class="item3"><button id="others" onclick="othersFunc()">others</button></div>
             </div>
             <div id="info">
-                My name is YaoweiLiu. Let me introduce myself to you!
-                I'm a student in Central China Normal University, I love programming. 
-                I'm a algorithm lover and I ofen participate in some competitive programing contests. For example, Codeforces, Atcoder, Leetcode.
+                My name is YaoweiLiu. Let me introduce myself to you!Im a student in Central China Normal University, I love programming. I'm a algorithm lover and I ofen participate in some competitive programing contests. For example, Codeforces, Atcoder, Leetcode.
             </div>
         </div>
         <script>
         function briefFunc() {
            var x = document.getElementById("info");
-           x.innerHTML = "My name is YaoweiLiu. Let me introduce myself to you!Im a student in Central China Normal University, I love programming. Im a algorithm lover and I ofen participate in some competitive programing contests. For example, Codeforces, Atcoder, Leetcode.";
+           x.innerHTML = "My name is YaoweiLiu. Let me introduce myself to you!Im a student in Central China Normal University, I love programming. I'm a algorithm lover and I ofen participate in some competitive programing contests. For example, Codeforces, Atcoder, Leetcode.";
         }
         function CPFunc() {
            var x = document.getElementById("info");
-           x.innerHTML = "I recently participated in many contests, but everytime my rating decreased. I hope I can become more stronger in competitive programming. You can check my github for my Code Library";
+           x.innerHTML = "I recently participated in many contests, but everytime my rating decreased. I hope I can become more stronger in competitive programming. You can check my github for my Code Library.";
         }
         function othersFunc() {
            var x = document.getElementById("info");
-           x.innerHTML = "Yeah, that's pretty much of me. If you want to know more about me, my email : yaoveiliu421@gmial.com";
+           x.innerHTML = "Yeah, that's pretty much of me. If you want to know more about me, my email : yaoveiliu421@gmial.com.";
         }
         </script>
     </div>
