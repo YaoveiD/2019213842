@@ -1,5 +1,6 @@
 // 关卡
 const qboards = [
+	"34 3"+"    "+"3__3"+" 2  "+"1111",	// classic
     "3333"+"    "+"2 4 "+"11  "+"1__1", // easiest
     "34 3"+"    "+"3113"+" 11 "+"1__1",
     "14 1"+"1  1"+"2 2 "+"2 2 "+"1__1",
@@ -237,29 +238,6 @@ window.onload = () => {
                 });
 
             });
-
-            var w = $dom.offsetWidth;
-            var h = $dom.offsetHeight;
-
-            let direction = {
-                dr: (x, y) => ((x/w < y/h) ? "d" : "r"),
-                ul: (x, y) => ((x/w < y/h) ? "l" : "u"),
-                ur: (x, y) => ((x/w + y/h < 1) ? "u" : "r"),
-                dl: (x, y) => ((x/w + y/h < 1) ? "l" : "d"),
-                lr: (x, y) => ((x < w/2) ? "l" : "r"),
-                ud: (x, y) => ((y < h/2) ? "u" : "d"),
-            }[movable.join("")];
-
-            $dom.onclick = function(e) {
-                var dompos = $dom.getBoundingClientRect();
-                var posX = dompos.left + window.pageXOffset;
-                var posY = dompos.top + window.pageYOffset;
-
-                var x = e.pageX - posX;
-                var y = e.pageY - posY;
-                $dom.getElementsByClassName(direction(x, y))[0].classList.add("selected");
-                clickmove(e, $dom);
-            };
         });
     };
 
